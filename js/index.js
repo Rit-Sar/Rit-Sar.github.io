@@ -32,6 +32,19 @@ $(function() {
   });
 });
 
+function addMember(){
+  const div = document.createElement('div');
+
+div.className = 'member';
+
+div.innerHTML = `
+  <img src="assets/Leo.jpg" alt="" width="200px">
+  <small>Di Caprio</small>
+`;
+
+document.getElementById('content').appendChild(div);
+}
+
 function load(){
   $('.chat').hide();
   $('.navLinks').hide();

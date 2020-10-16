@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="css/hamburger.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- e-EdPort need to build a video calling platform for the teachers and students. The organization needs a prototype for the same, which could be used on mobile devices. For the prototype, user must se their own video feed instead of others (since
     their is no back-end). The UI must be minimal, responsive and easy to understand. -->
@@ -69,7 +68,10 @@
               <i class="fa fa-question-circle icon" aria-hidden="true"></i>Support</li>
             <li class="list-group-item">
               <h6>Developer Tools</h6>
-              <!-- <button type="button" class="btn btn-dark addMember" name="button" onclick="addMember()">Add member</button> -->
+              <p>This section is just here for explaining. Most links are empty as 1 page was assigned.</p>
+              <p>Video and voice are working, but only input is blocked when closed. The camera is still on and is to be switched off through callback from backend</p>
+              <p>I didnt go much into functionality like screen presenting, A/V settings, etc as this is a UI assignment.</p>
+              <button type="button" class="btn btn-dark addMember" name="button" onclick="addMember()">Add member</button>
             </li>
           </ul>
         </div>
@@ -100,7 +102,7 @@
             </div>
           </div>
 
-          <div class="members">
+          <div class="members" id="content">
 
             <div class="chat">
               <nav>
@@ -188,7 +190,17 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="nav-new" role="tabpanel" aria-labelledby="nav-new-tab">...</div>
+
+                <div class="tab-pane fade invite" id="nav-new" role="tabpanel" aria-labelledby="nav-new-tab">
+                  <img src="assets/Chat.svg" width="300" alt="">
+                  <div class="input-group mb-3" style="width: 300px;">
+                    <input type="text" class="form-control" placeholder="Invite Tag" aria-label="Recipient's Tag" aria-describedby="Invite">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Invite</button>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
 

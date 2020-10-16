@@ -190,7 +190,7 @@ html {
 
 .navLinks {
   position: absolute;
-  width: 200px;
+  width: 300px;
   right: 0px;
   height: calc(100vh - 70px);
   background-color: white;
@@ -379,6 +379,12 @@ footer {
   height: 30px;
   text-align: center;
   z-index: 0;
+}
+.invite.active.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* width */
