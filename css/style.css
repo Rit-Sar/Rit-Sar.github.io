@@ -3,6 +3,10 @@ html {
   overflow-x: hidden !important;
   font-family: Bahnschrift !important;
 }
+body {
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
+}
 .loading {
   background-color: white;
   height: 100vh;
@@ -29,7 +33,6 @@ html {
   -webkit-animation: spinner1 1s linear infinite;
   animation: spinner1 1s linear infinite;
 }
-
 #spinner1:after {
   content: "";
   position: absolute;
@@ -41,7 +44,6 @@ html {
   border-radius: 50%;
   background: white;
 }
-
 @keyframes spinner1 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -122,14 +124,12 @@ html {
 .hamburger.is-active .hamburger-inner::after {
   background-color: #000;
 }
-
 .hamburger-box {
   width: 40px;
   height: 24px;
   display: inline-block;
   position: relative;
 }
-
 .hamburger-inner {
   display: block;
   top: 50%;
@@ -158,7 +158,6 @@ html {
 .hamburger-inner::after {
   bottom: -10px;
 }
-
 .hamburger--spin-r .hamburger-inner {
   transition-duration: 0.22s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -170,7 +169,6 @@ html {
   transition: bottom 0.1s 0.25s ease-in,
     transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-
 .hamburger--spin-r.is-active .hamburger-inner {
   transform: rotate(-225deg);
   transition-delay: 0.12s;
@@ -187,16 +185,14 @@ html {
   transition: bottom 0.1s ease-out,
     transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-
 .navLinks {
   position: absolute;
   width: 300px;
-  right: 0px;
+  right: 0;
   height: calc(100vh - 70px);
   background-color: white;
   z-index: 100;
 }
-
 .navbar .nav-item .dropdown-menu {
   display: block;
   opacity: 0;
@@ -210,11 +206,11 @@ html {
 .navbar .dropdown-menu.fade-down {
   top: 80%;
   transform: rotateX(-75deg);
-  transform-origin: 0% 0%;
+  transform-origin: 0 0;
 }
 .dropdown-menu {
   right: -15px !important;
-  top: 52px !important;
+  top: 40px !important;
 }
 .navbar .nav-item:hover .dropdown-menu {
   transition: 0.3s;
@@ -226,12 +222,10 @@ html {
 .dropdown-item:hover {
   padding-left: 20px;
 }
-
 .icon {
   transform: scale(1.5, 1.5);
   margin-right: 10px;
 }
-
 .landing {
   display: flex;
   align-items: center;
@@ -244,11 +238,9 @@ html {
   justify-content: center;
   min-height: calc(100vh - 100px);
 }
-
 .outer {
   margin: 20px;
 }
-
 #videoElement {
   width: 95%;
   height: auto;
@@ -369,8 +361,6 @@ html {
 }
 .text {
   height: calc(100vh - 210px);
-  /* display: flex;
-  flex-direction: column; */
   overflow-y: scroll;
   line-height: 2;
   z-index: 5;
@@ -386,27 +376,18 @@ footer {
   align-items: center;
   flex-direction: column;
 }
-
-/* width */
 ::-webkit-scrollbar {
   width: 5px;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
   background: white;
 }
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #000;
 }
-
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #000;
 }
-
 @media only screen and (max-width: 850px) {
   .landing {
     flex-direction: column;
